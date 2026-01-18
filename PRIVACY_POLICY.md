@@ -8,7 +8,7 @@
 
 ### 概述
 
-"AI上网助手" 是一款浏览器扩展，旨在帮助用户翻译网页内容。我们非常重视用户隐私，本隐私政策说明了我们如何收集、使用和保护您的信息。
+"localla" 是一款浏览器扩展，旨在帮助用户翻译网页内容。我们非常重视用户隐私，本隐私政策说明了我们如何收集、使用和保护您的信息。
 
 ### 信息收集
 
@@ -55,6 +55,16 @@
 - 所有设置数据仅存储在您的本地浏览器中
 - 使用 Ollama 时，所有数据处理都在本地完成
 - 我们不运营任何服务器来存储用户数据
+
+#### API Key 存储说明
+
+如果您使用需要 API Key 的翻译服务（如 OpenAI），您的 API Key 将：
+
+- **仅存储在本地**：使用 Chrome Storage API 安全地存储在您的本地浏览器中
+- **不会上传**：API Key 绝不会被发送到我们的服务器或任何第三方服务器
+- **仅用于请求**：API Key 仅在向相应 API 服务发送翻译请求时使用
+- **可随时删除**：您可以在扩展设置中随时清除或修改您的 API Key
+- **跨设备不同步**：如果您使用 Chrome 同步功能，API Key 可能会在您的设备间同步（由 Chrome 加密处理）；如需禁用，请在浏览器设置中关闭扩展数据同步
 
 ### 儿童隐私
 
@@ -124,6 +134,16 @@ When using online translation APIs, your data will be subject to the respective 
 - When using Ollama, all data processing is done locally
 - We do not operate any servers to store user data
 
+#### API Key Storage
+
+If you use translation services that require an API Key (such as OpenAI), your API Key will be:
+
+- **Stored locally only**: Securely stored in your local browser using Chrome Storage API
+- **Never uploaded**: Your API Key is never sent to our servers or any third-party servers
+- **Used only for requests**: The API Key is only used when sending translation requests to the respective API service
+- **Deletable at any time**: You can clear or modify your API Key at any time in the extension settings
+- **Cross-device sync**: If you use Chrome sync, your API Key may be synced across your devices (encrypted by Chrome); to disable this, turn off extension data sync in your browser settings
+
 ### Children's Privacy
 
 This extension is not directed at children under 13, and we do not knowingly collect personal information from children.
@@ -140,4 +160,4 @@ If you have any questions about this privacy policy, please contact us:
 
 ---
 
-© 2026 AI上网助手. All rights reserved.
+© 2026 localla. All rights reserved.
